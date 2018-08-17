@@ -1,0 +1,45 @@
+/*
+ Title: profitCal
+ Edited on Aug 15, 2018
+ Author: Tom Yang
+ Company: IGT Lighting Inc.
+
+*/
+div.header-section {
+    text-align: center;
+}
+
+div#cost_price {
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+div.row-grid {
+    width: 60%;
+    margin: 15px auto;
+	text-align: -webkit-center;
+}
+
+div#profit-margin-result h3 {
+    color: #2a9638;
+}
+
+div#profit-margin-result table {
+    border-collapse: collapse;
+	text-align: center;
+	border: 1px solid black;
+}
+
+div#profit-margin-result td, div#profit-margin-result th {
+    border: 1px solid black;
+	padding: 10px;
+}
+
+
+caption#cost_price_igt span, div#profit-margin-result span, div#best_price_25 span, div#best_price_30 span {
+	color: red;
+}
+
+caption#cost_price_igt {
+    padding-bottom: 15px;
+}
