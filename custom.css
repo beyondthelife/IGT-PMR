@@ -43,3 +43,19 @@ caption#cost_price_igt span, div#profit-margin-result span, div#best_price_25 sp
 caption#cost_price_igt {
     padding-bottom: 15px;
 }
+
+.adjust-customer-price {
+    margin: 35px;
+    border: 2px solid #000;
+}
+
+div#result-customer-price {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: cyan;
+}
+
+div#result-customer-price span {
+	color: red;
+	font-weight: 600;
+}
