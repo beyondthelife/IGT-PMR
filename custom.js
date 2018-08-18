@@ -108,6 +108,7 @@ $(function() {
 					if ( $("#cost_price").html() != '' ) {
 						//var cost_price = $("#cost_price").html();
 						$('#cost-price-igt').val($('#rt_cost').html());
+						$('#adjust-cost-price-igt').val($('#rt_cost').html());
 					}
 					//$("#cost-price-igt").prop("disabled", false);
 					//$("#rt_cal_heading").append("<th>Cost Price</th>");
@@ -147,6 +148,30 @@ $(function(){
 	});
 
 	$('#clr-cal').on('click', function(){
+		location.reload();
+	});
+
+});
+
+
+$(function(){
+	$('#adjust-profit-cal').on('click', function(){
+		var target_pmr = $("#target_pmr").val();
+		var adjust_cost_price = $("#adjust-cost-price-igt").val();
+
+		var cal_denominator = 1 - ( target_pmr / 100 );
+		//var cal_numerator = adjust_cost_price / cal_denominator;
+		var cal_adjust_customer_price = adjust_cost_price / cal_denominator;		
+
+		/*
+		$("#profit-margin-result").html("<h3>Customer Price for <span>" + profit_margin_rate.toFixed(2) + "%</span> of PMR: <span>$" + customer_price + "</span></h3>");
+		$("#best_price_25").html("<h3>Best Price for <span>25%</span> of PMR: <span>$" + best_price_25.toFixed(2) + "</span></h3>");
+		$("#best_price_30").html("<h3>Best Price for <span>30%</span> of PMR: <span>$" + best_price_30.toFixed(2) + "</span></h3>");
+		*/
+		$('#result-customer-price').html("<h2>Adjusted Customer Price: <span>$" + cal_adjust_customer_price.toFixed(2) +"</span></h2>");		
+	});
+
+	$('#adjust-clr-cal').on('click', function(){
 		location.reload();
 	});
 
