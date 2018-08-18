@@ -120,10 +120,26 @@
 					</tr>
 				</table>
 			</div>
-			<div id="best_price_25"></div>
-			<div id="best_price_30"></div>
-		</div>
-		
+			<!--div id="best_price_25"></div>
+			<div id="best_price_30"></div-->
+			<div class="adjust-customer-price">
+				<table>
+					<tr id="adjust_cal_heading">
+						<th>Target PMR</th>
+						<th>Cost Price</th>
+					</tr>
+					<tr id="adjust_cal_input">
+						<td><input type="text" name="customer_price" id="target_pmr" placeholder="Target PMR" /></td>
+						<td><input type="text" name="cost" id="adjust-cost-price-igt" placeholder="Cost Price"></td>
+					</tr>
+					<tr>
+						<td><button id="adjust-profit-cal">Calculator</button></td>
+						<td><button id="adjust-clr-cal">Clear</button></td>
+					</tr>
+				</table>
+				<div id="result-customer-price"></div>
+			</div>
+		</div>		
 	</div>
 
 	<!-- JQUERY FROM GOOGLE API -->    
