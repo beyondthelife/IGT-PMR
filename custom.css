@@ -45,8 +45,17 @@ caption#cost_price_igt {
 }
 
 .adjust-customer-price {
-    margin: 35px;
-    border: 2px solid #000;
+	margin-top: 45px;
+}
+
+.adjust-customer-price fieldset {
+	padding: 25px;
+}
+
+.adjust-customer-price fieldset legend {
+	color: #0b1ae0;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 div#result-customer-price {
