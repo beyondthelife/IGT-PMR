@@ -74,11 +74,11 @@
 							<div id="result_profit_margin_rate">
 								
 									<table>
-										<tr id="rt_cal_heading">
+										<tr id="rt_cal_heading">											
 											<th>Customer Price</th>
 											<th>Cost Price</th>
 										</tr>
-										<tr id="rt_cal_input">
+										<tr id="rt_cal_input">											
 											<td><input type="text" name="customer_price" id="customer_price" placeholder="Customer Price" /></td>
 											<td><input type="text" name="cost" id="cost-price-igt" placeholder="Cost Price"></td>
 										</tr>
@@ -123,21 +123,27 @@
 			<!--div id="best_price_25"></div>
 			<div id="best_price_30"></div-->
 			<div class="adjust-customer-price">
-				<table>
-					<tr id="adjust_cal_heading">
-						<th>Target PMR</th>
-						<th>Cost Price</th>
-					</tr>
-					<tr id="adjust_cal_input">
-						<td><input type="text" name="customer_price" id="target_pmr" placeholder="Target PMR" /></td>
-						<td><input type="text" name="cost" id="adjust-cost-price-igt" placeholder="Cost Price"></td>
-					</tr>
-					<tr>
-						<td><button id="adjust-profit-cal">Calculator</button></td>
-						<td><button id="adjust-clr-cal">Clear</button></td>
-					</tr>
-				</table>
-				<div id="result-customer-price"></div>
+				<fieldset>
+					<legend>Calculate Target PMR</legend>
+					<table>
+						<tr id="adjust_cal_heading">
+							<th>Slider Customer Price</th>
+							<th>Target PMR</th>
+							<th>Cost Price</th>
+						</tr>
+						<tr id="adjust_cal_input">
+							<td><input type="range"id="prmVal" min="0" max="100" value="50" step="0.5"></td>
+							<td><input type="text" name="customer_price" id="target_pmr" placeholder="Target PMR" /></td>
+							<td><input type="text" name="cost" id="adjust-cost-price-igt" placeholder="Cost Price"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><button id="adjust-profit-cal">Calculator</button></td>
+							<td><button id="adjust-clr-cal">Clear</button></td>
+						</tr>
+					</table>
+					<div id="result-customer-price"></div>
+				</fieldset>				
 			</div>
 		</div>		
 	</div>
