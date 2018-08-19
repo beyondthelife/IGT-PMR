@@ -153,6 +153,12 @@ $(function(){
 
 });
 
+$(function(){
+	$('#prmVal').change(function(){		
+		$("#target_pmr").val($('#prmVal').val());
+	});
+});
+
 
 $(function(){
 	$('#adjust-profit-cal').on('click', function(){
@@ -176,6 +182,8 @@ $(function(){
 	});
 
 });
+
+
 //////////////////////////////////////////////////////////////////////////////////// 
 
 
