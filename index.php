@@ -127,7 +127,7 @@
 					<legend>Calculate Target PMR</legend>
 					<table>
 						<tr id="adjust_cal_heading">
-							<th>Slider Customer Price</th>
+							<th>Slider Target PMR</th>
 							<th>Target PMR</th>
 							<th>Cost Price</th>
 						</tr>
